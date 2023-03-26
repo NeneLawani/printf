@@ -6,7 +6,8 @@
 #include <stddef.h>
 #include <unistd.h>
 
-void _puts(char *str);
+int _puts(char *str);
 int _putchar(char c);
+int _printf(const char *format, ...);
 
 #endif /* #ifndef MAIN_H */
