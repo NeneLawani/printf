@@ -7,5 +7,6 @@
 #include <unistd.h>
 
 void _puts(char *str);
+int _putchar(char c);
 
 #endif /* #ifndef MAIN_H */
