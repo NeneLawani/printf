@@ -32,9 +32,8 @@ int _printf(const char *format, ...)
 				case '\0': /* null byte check */
 					return (-1);
 				default: /* no conversion specifiers */
-					_putchar('%');
-					_putchar(*format);
-					count += 2;
+					count += _putchar(format[i]);
+					i++;
 					break;
 			}
 			continue;
