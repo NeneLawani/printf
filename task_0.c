@@ -35,6 +35,15 @@ int _printf(const char *format, ...)
 					count += _putchar('%');
 					i += 2;
 					break;
+
+				case '\0': /* null byte check */
+					return (-1);
+					break;
+
+				default: /* no conversion specifiers */
+					count += _putchar(format[i]);
+					i++;
+					break;
 			}
 			continue;
 		}
